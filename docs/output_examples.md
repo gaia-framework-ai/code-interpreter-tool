@@ -340,3 +340,13 @@ This plot showcases a simple, yet elegant, sine wave which is a fundamental conc
 ```
 
 </details>
+
+## Example 4 - Utilizing the tool with a Discord Bot
+
+In this example, a discord bot setup with GPT is configured to use the tool. After GPT responds with a url similarly to the examples above, it displays the message including a link to download the file if one is created. Which this case it returns a downloadable link to a blob storage where the file is uploaded to. Since discord supports displaying markdown, its shown nicely to the user compared to the standard CLI output. The code for this is not included in the repo, but a demonstration of what can be done using the tool in your application depending on the architecture. 
+
+<details>
+<summary>View example</summary>
+
+![image](https://github.com/gaia-framework-ai/code-interpreter-tool/assets/167034090/5f72ba9a-0be8-4531-aa5b-6f38c0c66d26)
+</details>
