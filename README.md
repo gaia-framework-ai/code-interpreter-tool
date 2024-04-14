@@ -6,7 +6,6 @@ An open source version of the flow used to create a basic python code interprete
 
 This tool aims to act similarly with basic functionality to the `code interpreter` tool that ChatGPT uses to execute python code. In this example, it's ran as a non-stateful jupyter notebook environment that allows execution of python code including internet access and allows for persisting of files to local, blob, or other storage locations depending on the setup. Though, it can be easily extended to support stateful execution as needed and left as a non-stateful tool here for simplicity.
 
-
 **Models tested**:
 
 - `GPT` models that support tool execution but best with `gpt-4` models
@@ -69,6 +68,8 @@ const dockerCommand = [
   - **Feature Restrictions:** Disable unnecessary features to minimize potential attack surfaces
 
   - **Error Handling:** Configure error handling to avoid revealing sensitive information
+ 
+- See the full implementation of the tool [here](https://github.com/gaia-framework-ai/code-interpreter-tool/blob/main/examples/typescript/src/tools/pythonTool.ts)
 
 ## Example flow
 
