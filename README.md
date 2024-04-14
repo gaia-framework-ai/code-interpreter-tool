@@ -1,8 +1,11 @@
 # GAIA Framework - Code Interpreter Tool
 
+[![CI](https://github.com/gaia-framework-ai/code-interpreter-tool/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/gaia-framework-ai/code-interpreter-tool/actions/workflows/build.yml)
+
 An open source version of the flow used to create a basic python code interpreter tool, used similarly within the currently unreleased `gaia-framework` and able to run and test with locally using Docker
 
 This tool aims to act similarly with basic functionality to the `code interpreter` tool that ChatGPT uses to execute python code. In this example, it's ran as a non-stateful jupyter notebook environment that allows execution of python code including internet access and allows for persisting of files to local, blob, or other storage locations depending on the setup. Though, it can be easily extended to support stateful execution as needed and left as a non-stateful tool here for simplicity.
+
 
 **Models tested**:
 
