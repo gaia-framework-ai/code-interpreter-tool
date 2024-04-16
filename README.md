@@ -132,7 +132,11 @@ For the tool to execute properly the docker image must be built first:
     ```
 
 4. Enter a prompt that would make GPT choose the tool
-   - e.g., `execute a python script to add two numbers together and show the result`
+   - e.g., `execute a python script to do something cool with matplotlib and show the result`
+
+**Result with base setup:**
+
+![image](https://github.com/gaia-framework-ai/code-interpreter-tool/assets/167034090/6989c8d9-b53b-4f53-96e8-eb85ad018aed)
 
 ### Run Typescript Discord Bot Example
 
@@ -164,6 +168,10 @@ For the tool to execute properly the docker image must be built first:
 
 6. Enter a prompt to your bot in Discord that would make GPT choose the tool
    - e.g., `execute a python script to do something cool and display it`
+
+**Result with blob configured:**
+
+![image](https://github.com/gaia-framework-ai/code-interpreter-tool/assets/167034090/ce81ec82-3462-4930-a77e-544af20ae620)
 
 ## Example Run Outputs
 
