@@ -7,6 +7,9 @@ on:
 jobs:
   build-ts-examples:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        type: [console,discordbot]
 
     steps:
       - uses: actions/checkout@v3
@@ -18,12 +21,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd examples/typescript
+          cd examples/typescript/${{ matrix.type }}
           yarn install --frozen-lockfile
 
       - name: Build
         run: |
-          cd examples/typescript
+          cd examples/typescript/${{ matrix.type }}
           yarn build  
 
   docker-build-environments:
