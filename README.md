@@ -117,9 +117,9 @@ For the tool to execute properly the docker image must be built first:
       docker build -t jupyter-runtime .
       ```
 
-### Run Typescript Example
+### Run Typescript Console Example
 
-1. Navigate to `examples/typescript` in terminal
+1. Navigate to `examples/typescript/console` in terminal
 
 2. Create a `.env` file based on the `.env.example` and add your value for the `OPENAI_API_KEY`
 
@@ -133,6 +133,37 @@ For the tool to execute properly the docker image must be built first:
 
 4. Enter a prompt that would make GPT choose the tool
    - e.g., `execute a python script to add two numbers together and show the result`
+
+### Run Typescript Discord Bot Example
+
+1. Setup a Bot on the Discord Developer Portal: <https://discord.com/developers/applications>
+
+2. Navigate to `examples/typescript/discordbot` in terminal
+
+3. Create a `.env` file based on the `.env.example` and add your value for the `OPENAI_API_KEY`
+
+    - (Optional) To connect to Azure Blob storage, provide values for the additional following keys, assuming Azure Blob Storage is already configured in your Azure subscription (see [Microsofts Quickstart](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal))
+
+      - `AZURE_STORAGE_CONNECTION_STRING` - The connection string to your Azure Storage resource
+
+      - `AZURE_BLOB_CONTAINER_NAME` - The name of your blob container
+
+      - `AZURE_STORAGE_ACCOUNT_NAME` - The name of the Azure Storage account
+
+      - `AZURE_STORAGE_ACCOUNT_KEY` - The account key of the Azure Storage account
+
+4. Run the following commands sequentially:
+
+    ```bash
+    yarn install
+    yarn build
+    yarn start
+    ```
+
+5. Start a chat with your bot using its username
+
+6. Enter a prompt to your bot in Discord that would make GPT choose the tool
+   - e.g., `execute a python script to do something cool and display it`
 
 ## Example Run Outputs
 
